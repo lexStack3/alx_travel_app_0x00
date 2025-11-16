@@ -21,7 +21,7 @@ def run():
         "first_name": lambda x: seeder.faker.first_name(),
         "last_name": lambda x: seeder.faker.last_name(),
         "email": lambda x: seeder.faker.unique.email(),
-        "username": lambda x: seeder.faker.unique.free_email()
+        "username": lambda x: seeder.faker.unique.user_name()
     })
 
     print("Creating 10 Listing instances...")
